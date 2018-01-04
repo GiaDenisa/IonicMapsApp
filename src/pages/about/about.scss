@@ -1,3 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
 page-about {
+     .bg{
+     	height: 100%;
+     	width: 100%;
+     	background: #e74c3c;
+     }
+     .head{
+     	position: fixed;
+     	display: block;
+     	color: #fff;
+     	top: 20%;
+     	width: 100%
 
+     	
+     }
+     .head h1{
+     	font-size: 7vh!important;
+     	font-weight: lighter!important;
+     	font-family: "Pacifico", cursive;
+
+
+     }
+     .inputs{
+     	position: absolute;
+     	display: block;
+     	top: 50%;
+     	left: 10%;
+      	width: 80%;
+      	
+     }
+     .login-btn {
+     	background-color: #3c8ae7;
+     }
 }
