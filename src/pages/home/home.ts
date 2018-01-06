@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, AlertController  } from 'ionic-angular';
 import {} from '@types/googlemaps';
-
 
 
 @Component({
@@ -10,13 +9,21 @@ import {} from '@types/googlemaps';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) 
+  constructor(public navCtrl: NavController, public alertCtrl: AlertController) 
   
 { 
 console.log("Am ajuns in constructorul de pe pagina home");
   }
 
 
+showAlert() {
+    let alert = this.alertCtrl.create({
+      title: 'Îți mulțumim!',
+      subTitle: 'Evenimentul a fost adăugat cu succes!',
+      buttons: ['OK']
+    });
+    alert.present();
+  }
 
 
   ngAfterViewInit() {
@@ -35,7 +42,9 @@ console.log("Am ajuns in constructorul de pe pagina home");
     let map = new google.maps.Map(mapCanvas, mapOptions);
   }
 
-   }
+  
+
+}
 
 
   

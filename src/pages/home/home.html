@@ -11,13 +11,13 @@
 			<ion-icon name="arrow-dropright"></ion-icon>
 		</button>
 		<ion-fab-list side="right">
-			<button ion-fab><ion-icon name="flame"></ion-icon></button>
-			<button ion-fab><ion-icon name="warning"></ion-icon></button>
-			<button ion-fab><ion-icon name="medkit"></ion-icon></button>
+			<button ion-fab  (click) ="showAlert()"><ion-icon name="flame"></ion-icon></button>
+			<button ion-fab (click) ="showAlert()"><ion-icon name="warning"></ion-icon></button>
+			<button ion-fab (click) ="showAlert()"><ion-icon name="medkit"></ion-icon></button>
 		</ion-fab-list>
 
 	</ion-fab>
 	
-  	<div id="map" style="height: 90%" data-tap-disabled="true"></div>
+  	<div id="map" style="height: 100%" data-tap-disabled="true"></div>
   
 </ion-content>
